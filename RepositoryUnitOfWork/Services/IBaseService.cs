@@ -19,7 +19,7 @@ namespace RepositoryUnitOfWork.Services
 
         Task<TDto> FindByIdAsync(object keyValues);
 
-        Task<PaginatedList<TEntity, TDto>> FindAsync(Expression<Func<TEntity, bool>> filter = null,
-            Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, int page = 1);
+        //Task<PaginatedList<TEntity, TDto>> FindAsync(Expression<Func<TEntity, bool>> filter = null,
+        //    Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, int page = 1);
     }
 }
