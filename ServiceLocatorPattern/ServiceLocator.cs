@@ -31,7 +31,7 @@ namespace ServiceLocatorPattern
         public void Register<T>(T service)
         {
             var key = typeof(T);
-            if (_serviceCache.ContainsKey(key))
+            if (!_serviceCache.ContainsKey(key))
             {
                 _serviceCache.Add(key, service);
             }
